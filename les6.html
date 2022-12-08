@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM style</title>
+    <style>
+        .nextText{
+            background-color: burlywood;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: burlywood;
+        }
+        .circleColor{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, fugiat! Omnis corporis dolorem iste suscipit pariatur, vitae eum repudiandae cupiditate cumque dolore fuga ab quae.</p>
+     -->
+     <div class = "circle"></div>
+
+    <script>
+
+        //let el = document.querySelector('.text');
+        //console.log(el);
+
+        //el.style.color = 'red';
+
+        //el.style.fontSize = '20px';         //1
+
+        //el.style['font-size'] = '20px';     //2
+
+        /* let fs = 'font-size';              //3
+        el.style[fs] = '20px'; */
+
+        /* let fs = 'font-size';
+        let fsValue = 25;                     //4
+        el.style[fs] = `${fsValue}px`; */
+
+        //el.className = 'next-Text';
+        //el.classList.add('nextText');
+        //el.classList.remove('text');
+        //el.classList.contains('nextText');
+        //console.log(el.classList.contains('nextText'))
+
+        /* setTimeout(
+            function(){
+                el.classList.add('nextText');
+            }, 3000
+        );
+        let count = 0;
+        let startCount = setInterval(
+            function(){
+                console.log(count);
+                count++;
+                if(count == 10) {
+                    clearInterval(startCount);
+                }
+            }, 1000
+        ); */
+
+
+
+        //1
+
+         /* let circle = document.querySelector('.circle');
+        console.log(circle); */
+            /*
+        let count = 0;
+        setInterval(
+            () => {
+                if(count % 2 == 0) {
+                    circle.classList.add('circleColor');
+                }
+                else {
+                    circle.classList.remove('circleColor');
+                }
+                count++;
+            }, 500
+        ); */
+        
+        //setInterval(() => circle.classList.toggle('circleColor'), 500)
+
+        //2
+
+        /* let circle = document.querySelector('.circle');
+        console.log(circle);
+
+        let count = 0;
+
+        setInterval(() => circle.style.backgroundColor = `rgb(${randomVC()}, ${randomVC()}, ${randomVC()})`, 500)
+
+        function randomVC(){
+            return Math.floor(Math.random() * 256);
+        }
+
+        console.log(getComputedStyle(circle).width); */
+
+        
+
+
+
+    </script>
+</body>
+</html>

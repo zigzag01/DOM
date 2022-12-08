@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les7</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color:brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div>
+        <h1>hello</h1>
+    </div>
+    <div>
+        <div>1</div>
+        <div>2</div>
+        <div id="el">3</div>
+        <div>4</div>
+        <div>5</div>
+    </div> -->
+
+    <!-- <div class = "f">
+        <h1>hello, </h1>
+    </div> -->
+
+    <input type="text" value="text" id="input1">
+    <h1 id="header1"></h1>
+
+    <script>
+
+        /* let header = document.querySelector('h1');
+        console.log(header.innerText);
+        header.innerText = 'hi';
+
+        let container = document.querySelector('div');
+        console.log(container.innerHTML);
+        container.innerHTML = "<h3 class='text' style='color: red'>text</h3>";
+
+        let bodyContainer = document.querySelector('body');
+        console.log(bodyContainer.textContent); */
+
+        /* let header = document.querySelector('h1');
+        header.innerText = 'hi';
+        header.id = 'asd';
+        header.title = 'fgh'; */
+        
+
+        /* let header = document.querySelector('h1');
+        header.innerText = 'hi';
+        let bodyContainer = document.querySelector('body');
+        let newEl = document.createElement('div');
+
+        let el3 = document.querySelector('#el');
+        newEl.style.borderRadius = '50%';
+        newEl.classList.add('container');
+        newEl.innerText = 'circle'; */
+
+        //bodyContainer.append(newEl); //добавляет эл в конец
+        //bodyContainer.prepend(newEl); //добавляет эл в начало
+
+        //el3.after(newEl);
+        //el3.before(newEl);
+        //el3.remove();
+
+        
+
+        //1
+
+        /* let header = document.querySelector('h1');
+        Yname = prompt('your name');
+        header.append(Yname); */
+        
+        //2
+
+        /* let arr = [
+            {
+                name: 'соня',
+                gender: 'ж'
+            }, 
+            {
+                name: 'влад',
+                gender: 'м'
+            }, 
+            {
+                name: 'злата',
+                gender: 'ж'
+            }, 
+        ]
+
+         let list = document.createElement('ul');
+        document.body.append(list);
+
+        for(let i = 0; i < arr.length; i++){
+            let li = document.createElement('li'); 
+            li.innerText = arr[i].name;
+            if(arr[i].gender  == 'м'){
+                li.style.color = 'blue';
+            } else {
+                li.style.color = 'red';
+            };
+            list.append(li);
+        } */
+
+        //3
+
+        let input = document.querySelector('#input1');
+        let header = document.querySelector('#header1');
+        
+        setInterval(()=>{
+            header1.innerText = input.value;
+            }, 1000)
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
